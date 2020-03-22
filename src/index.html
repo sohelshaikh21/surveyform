@@ -3,6 +3,8 @@
         <title>
             Survey Form
         </title>
+        <link href="https://fonts.googleapis.com/css?family=Poppins&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="style/index.css">
     </head>
     <body>
         <h1 id="title">
@@ -11,16 +13,23 @@
         <p id="description">
             Thank you for taking the time to help us improve the platform
         </p>
-        <form id="survey-form">
-            <label for="name">
-                Name:
-            </label>
-            <input type="text" id="name" required>  
-            <label for="email">
-                Email:
-            </label>
-            <input type="email" id="email" required>  
-            <button id="submit">Submit</button> 
-        </form>
+        <div id="form-container">
+            <form id="survey-form">
+                <label for="name">
+                    Name:
+                </label>
+                <input tabindex="1" class="form-input" type="text" id="name" placeholder="Enter your Name" required><br>
+                <label for="email">
+                    Email:
+                </label>
+                <input tabindex="2" class="form-input" type="email" id="email" placeholder="Enter your Email Address" required><br>
+                <label for="age">
+                        Age:
+                </label>
+                <input tabindex="3" class="form-input" type="number" placeholder="Enter your Age" id="number"><br>    
+                <button class="btn-submit" id="submit">Submit</button> 
+            </form>
+        </div>
+        
     </body>
 </html>
