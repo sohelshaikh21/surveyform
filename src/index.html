@@ -15,18 +15,40 @@
         </p>
         <div id="form-container">
             <form id="survey-form">
-                <label for="name">
+                <label id="name-label" for="name">
                     Name:
                 </label>
                 <input tabindex="1" class="form-input" type="text" id="name" placeholder="Enter your Name" required><br>
-                <label for="email">
+                <label id="email-label" for="email">
                     Email:
                 </label>
                 <input tabindex="2" class="form-input" type="email" id="email" placeholder="Enter your Email Address" required><br>
-                <label for="age">
+                <label id="number-label" for="age">
                         Age:
                 </label>
                 <input tabindex="3" class="form-input" type="number" placeholder="Enter your Age" id="number"><br>    
+                <label for="dropdown">
+                    Which option best describes your current role?
+                </label>
+                <select id="dropdown" tabindex="4" class="form-input">
+                    <option selected disabled>Select Current Role</option>
+                    <option>Student</option>
+                    <option>Full Time Employee</option>
+                    <option>Others</option>
+                    <option>Prefer Not to Say</option>
+                </select>
+                <label>
+                    Would you recommend freeCodeCamp to a friend?
+                </label><br>
+                <label for="definitely"> 
+                        <input class="form-radio" id="definitely" type="radio" name="recommend">Definitely
+                </label><br>
+                <label for="maybe"> 
+                        <input class="form-radio" id="maybe" type="radio" name="recommend">May Be
+                </label><br>
+                <label for="notsure"> 
+                        <input class="form-radio" id="notsure" type="radio" name="recommend">Not Sure
+                </label><br>
                 <button class="btn-submit" id="submit">Submit</button> 
             </form>
         </div>

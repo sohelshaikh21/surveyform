@@ -26,6 +26,11 @@ label
     border-radius: 5px;
     margin-bottom:5%;
 }
+.form-radio
+{
+    width:10%;
+    height: 20px;
+}
 .form-input:focus
 {
     border:solid lightblue 1px;
